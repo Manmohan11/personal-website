@@ -8,51 +8,76 @@
 
 body{
     background-image: url(https://i.redd.it/zd9jym6nsja51.jpg);
+    /* background-image: url(https://i.redd.it/cb4m93pl0qm51.png); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
+header{
+    height: 82px;
+}
 
 .navbar{
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-    margin: 0px;
-    padding: 0px;
+    background: transparent;
+    margin-top: 10px;
     align-content: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    
 }
 
 .logo-container{
     height: 30px;
     width: 60px;
-    margin-left: 30px;
+    margin-left: 40px;
     vertical-align: middle;
     
 
 }
+
+.social-container{
+    padding-top: 8px;
+    display: flex;   
+}
+
+.social-container a img{
+    margin: 10px;
+    height: 20px;
+    width: 30px;
+}
+
+.social-container a:hover img{
+    animation-duration: 1s ease;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.social-container a:hover .yt{
+    height: 25px;
+    width: 37px;
+}
+
+
 
 .nav-item-container{
-    margin: 0px;
-    padding: 0px;
     vertical-align: middle;
 }
 
-.nav-items{
-    margin: 0px;
-    padding: 0px;
+.nav-items li a{
+    padding: 13px;
     vertical-align: middle;
 }
+
+
 
 .nav-item-container ul{ 
-  
-    margin-right: 0px;
+   
+    margin-right: 30px;
     padding: 0px;
     vertical-align: middle;
-    /* background-color: rgb(67, 68, 53); */
     background : transparent;
-    
     text-align: left;
     display: inline-flex;
     list-style: none; 
@@ -67,25 +92,36 @@ body{
     color: rgb(31, 61, 139);
 }
 
-
 .nav-dropdown{
     display: none;
+}
+
+/*========================Dropdown menu==========================*/
+
+.nav-dropdown ul li a{
+    margin: 0px;
+    padding: 5px;
+}
+
+.nav-dropdown ul li:hover .dropdown-item {
+    color: rgb(31, 61, 139);
+    background: transparent;
+    
 }
 
 .nav-item-container ul li:hover .nav-dropdown{
     display: block;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
     margin-left: -20px;
     border-radius: 10px;
 }
 
 .nav-item-container ul li:hover .nav-dropdown ul{
     display: block;
-    
-
 }
 
 .nav-item-container ul li:hover .nav-dropdown ul li{
@@ -93,3 +129,4 @@ body{
     background: transparent;
     text-align: left;
 }
+
